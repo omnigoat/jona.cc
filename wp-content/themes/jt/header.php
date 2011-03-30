@@ -46,4 +46,4 @@
 		<div class="search">
 		</div>
 
-	<div id="main">
+	<div class="posts">

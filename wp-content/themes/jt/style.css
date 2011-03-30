@@ -57,9 +57,13 @@ div.bottom-right a {
 	margin-right: 80px;
 }
 
+div.posts {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
 div.post {
-	margin-top: 20px;
-	padding: 20px;
+	padding: 30px;
 	box-shadow: 0px 0px 10px black;
 }
 
@@ -89,12 +93,10 @@ div.header div.title-wrapper {
 
 div.header span.date {
 	margin-left: 5px;
-	text-transform: uppercase;
-	font-size: 0.6em;
 	color: gray;
 	font-family: Arial;
-	
-	font-style: italic;
+	font-size: 0.6em;
+	text-transform: none;
 }
 
 div.header hr {
@@ -115,7 +117,7 @@ div.post div.content .overview {
 	font-style: italic;
 	font-size: 0.9em;
 	margin: 0 3%;
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 	color: #666666;
 }
 
@@ -125,7 +127,7 @@ div.post div.content h1 {
 	font-family: Arial, sans-serif;
 	font-size: 1em;
 	margin-bottom: 2px;
-	margin-top: 20px;
+	margin-top: 25px;
 }
 
 div.post div.content p {
@@ -134,6 +136,7 @@ div.post div.content p {
 	font-family: Verdana, sans-serif;
 	color: #222;
 	letter-spacing: 0.5px;
+	line-height: 1.4em;
 }
 
 div.post div.meta {
