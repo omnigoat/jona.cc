@@ -31,6 +31,7 @@
 	 */
 	wp_head();
 ?>
+<?php comments_popup_script(); ?>
 </head>
 
 <body <?php body_class();?> >

@@ -1,16 +1,22 @@
 <?php if (have_posts()) : ?>
 	<?php while (have_posts()) : the_post(); ?>
+
 		<div class="post">
-			<?php the_date('F j, Y', '<h5 class="postDate"><abbr class="published">','</abbr></h5>'); ?>
-			<div class="post-content">
-				<h3 class="entry-title"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h3>
-				
-				<div class="entry-content">
-						<?php the_content('Read the rest of this entry &raquo;'); ?>
+			<div class="header">
+				<div class="title-wrapper">
+					<a class="title" href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a>
+					<span class="date">posted on <?php the_date('F j, Y'); ?></span>
+					<hr />
 				</div>
+				<div style="clear: both"></div>
+				
 			</div>
 
-			<div class="postMeta">
+			<div class="content">
+				<?php the_content('Read the rest of this entry &raquo;'); ?>
+			</div>
+		
+			<div class="meta">
 				<?php if ('closed' == $post->comment_status) : ?>
 					<div class="comments closed">
 			 	<?php else : ?>
