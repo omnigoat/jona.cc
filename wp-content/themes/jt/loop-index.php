@@ -5,7 +5,9 @@
 			<div class="header">
 				<div class="title-wrapper">
 					<a class="title" href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a>
-					<span class="date">posted on <?php the_date('F j, Y'); ?>, as <?php the_category(', ') ?></span>
+					<?php if (!is_page()) : ?>
+						<div><span class="date">posted on <?php the_date('F j, Y'); ?>, as <?php the_category(', ') ?></span></div>
+					<?php endif; ?>
 					<hr />
 				</div>
 				<div style="clear: both"></div>
