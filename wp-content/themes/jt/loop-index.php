@@ -17,23 +17,33 @@
 			<div class="content">
 				<?php the_content('Read the rest of this entry &raquo;'); ?>
 			</div>
-		
+			
+			<hr class="end-post" />
+
 			<div class="meta">
-				<?php if ('closed' == $post->comment_status) : ?>
-					<div class="comments closed">
-			 	<?php else : ?>
-					<div class="comments">
-				<?php endif; ?>
-				<?php comments_popup_link('leave a comment', '1 comment', '% comments', '', 'comments closed'); ?>
+				<div class="row">
+					
+					<div class="prev">
+						<?php previous_post_link("<< %link"); ?>
+					</div>
+				
+					<?php if ('closed' == $post->comment_status) : ?>
+						<div class="comments closed">
+				 	<?php else : ?>
+						<div class="comments">
+					<?php endif; ?>
+					<?php comments_popup_link('leave a comment', '1 comment', '% comments', '', 'comments closed'); ?>
+					</div>
+
+					<div class="next">
+						<?php next_post_link("%link >>"); ?>
+					</div>
+
 				</div>
-			</div>
+			</div>	
+			
 		</div>
 	<?php endwhile; ?>
-
-	<div class="pageNav">
-		<div class="prev"><?php next_posts_link('&laquo; Older') ?></div>
-		<div class="next"><?php previous_posts_link('Newer &raquo;') ?></div>
-	</div>
 
 <?php else : ?>
 

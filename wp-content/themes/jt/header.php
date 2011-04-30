@@ -42,6 +42,12 @@
 				<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 			</div>
 		</div>
+		<div class="menu">
+			<ul class="nav-list">
+				<li><a href="articles">Articles</a></li>
+				<li><a href="">Blag</a></li>
+			</ul>
+		</div>
 
 		<div class="search">
 		</div>
