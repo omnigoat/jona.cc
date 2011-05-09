@@ -44,8 +44,8 @@
 		</div>
 		<div class="menu">
 			<ul class="nav-list">
-				<li><a href="articles">Articles</a></li>
-				<li><a href="">Blag</a></li>
+				<li><a href="/articles">Articles</a></li>
+				<li><a href="/">Blag</a></li>
 			</ul>
 		</div>
 
